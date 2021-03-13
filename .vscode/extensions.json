@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "stringham.move-ts",
+        "streetsidesoftware.code-spell-checker",
+        "steoates.autoimport",
+        "formulahendry.auto-rename-tag",
+        "coenraads.bracket-pair-colorizer",
+        "dsznajder.es7-react-js-snippets",
+        "wix.vscode-import-cost",
+        "pkief.material-icon-theme",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense"
+    ]
+}
