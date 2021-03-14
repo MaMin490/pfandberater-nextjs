@@ -14,7 +14,13 @@ node_modules/
 .npm
 .eslintcache
 .yarn-integrity
-.next
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
 
 # yarn 
 yarn.lock
