@@ -14,18 +14,20 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export default function MainLayout(props) {
+export default function MainLayout(props:any) {
     return (
         <>
             <GlobalStyle />
             <ThemeProvider theme={theme}>
                 <Head>
                     <title>Pfandberater</title>
-                    <link rel="stylesheet" href="/static/css/styles.css"></link>
+                    {/* <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/> */}
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
                 </Head>
                 <div>
                     <Header />
-                    <div></div>
+                    
                     {props.children}
                 </div>
             </ThemeProvider>

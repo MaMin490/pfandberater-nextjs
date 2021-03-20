@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Overlock+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DotGothic16&family=Monoton&family=Reenie+Beanie&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+body, a {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  font-size: '16px';
+}
+
+span {
+    font-family: 'Pacifico', cursive;
+    /* font-family: 'Monoton', cursive; */
+     /* font-family: 'Audiowide', cursive; */
+     /* font-family: 'DotGothic16', sans-serif; */
+/* font-family: 'Reenie Beanie', cursive; */
+/* font-family: 'Ubuntu Mono', monospace; */
+}
+

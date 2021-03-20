@@ -5,13 +5,13 @@ import thunkMiddleware from 'redux-thunk'
 
 import reducers from './reducers'
 
-let store
+let store:any
 
-function initStore(initialState) {
+function initStore(initialState:any) {
     return createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
 }
 
-export const initializeStore = (preloadedState) => {
+export const initializeStore = (preloadedState:any) => {
     let _store = store ?? initStore(preloadedState)
 
     if (preloadedState && store) {
@@ -31,7 +31,7 @@ export const initializeStore = (preloadedState) => {
     return _store
 }
 
-export function useStore(initialState) {
+export function useStore(initialState:any) {
     const store = useMemo(() => initializeStore(initialState), [initialState])
     return store
 }

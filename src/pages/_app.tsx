@@ -1,9 +1,10 @@
 import { Provider } from 'react-redux'
 
 import { useStore } from '../store'
+import '../css/main.css'
 import MainLayout from '../components/layouts/mainLayout'
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }:any) {
     const store = useStore(pageProps.initialReduxState)
 
     return (
