@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly in "debug" mode 1`] = `
+<Fragment>
+  <Header
+    style={
+      Object {
+        "backgroundColor": "black",
+        "paddingBottom": "4.6rem",
+        "width": "100%",
+      }
+    }
+  >
+    <styled.div
+      style={
+        Object {
+          "backgroundColor": "black",
+        }
+      }
+    >
+      <Menu
+        mode="horizontal"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "black",
+            "display": "flex",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          }
+        }
+        theme="dark"
+      >
+        <MenuItem
+          key="1"
+          style={
+            Object {
+              "backgroundColor": "black",
+              "flexBasis": "75%",
+            }
+          }
+        >
+          <Link
+            href="/"
+          >
+            <a
+              style={
+                Object {
+                  "color": "#2bebc8",
+                  "fontFamily": "pacifico",
+                  "fontSize": "1.8rem",
+                }
+              }
+            >
+              El Pfandberater
+            </a>
+          </Link>
+        </MenuItem>
+        <MenuItem
+          icon={
+            <ForwardRef(LoginOutlined)
+              style={
+                Object {
+                  "fontSize": "1.2rem",
+                }
+              }
+            />
+          }
+          key="2"
+          style={
+            Object {
+              "backgroundColor": "black",
+              "flexBasis": "12.5%",
+            }
+          }
+        >
+          <Link
+            href="/login"
+          >
+            <a
+              style={
+                Object {
+                  "fontSize": "1.2rem",
+                }
+              }
+            >
+              Login
+            </a>
+          </Link>
+        </MenuItem>
+        <MenuItem
+          icon={
+            <ForwardRef(LogoutOutlined)
+              style={
+                Object {
+                  "fontSize": "1.2rem",
+                }
+              }
+            />
+          }
+          key="3"
+          style={
+            Object {
+              "backgroundColor": "black",
+              "flexBasis": "12.5%",
+            }
+          }
+        >
+          <Link
+            href="/logout"
+          >
+            <a
+              style={
+                Object {
+                  "fontSize": "1.2rem",
+                }
+              }
+            >
+              Logout
+            </a>
+          </Link>
+        </MenuItem>
+      </Menu>
+    </styled.div>
+    <styled.div
+      style={
+        Object {
+          "backgroundColor": "#1e1f22",
+        }
+      }
+    >
+      <Menu
+        mode="inline"
+        onOpenChange={[Function]}
+        style={
+          Object {
+            "backgroundColor": "black",
+            "width": "100%",
+          }
+        }
+        theme="dark"
+      >
+        <SubMenu
+          icon={
+            <ForwardRef(MenuFoldOutlined)
+              style={
+                Object {
+                  "color": "#2bebc8",
+                  "fontSize": "1.5rem",
+                  "marginRight": "1.5rem",
+                  "marginTop": "0.8rem",
+                }
+              }
+            />
+          }
+          key="sub1"
+          style={
+            Object {
+              "color": "#2bebc8",
+              "fontFamily": "pacifico",
+              "fontSize": "1.45rem",
+              "fontWeight": 550,
+              "height": "4.0rem",
+              "marginTop": "0.95rem",
+            }
+          }
+          title="El Pfandberater"
+        >
+          <MenuItem
+            icon={
+              <ForwardRef(HomeOutlined)
+                style={
+                  Object {
+                    "fontSize": "1.3rem",
+                  }
+                }
+              />
+            }
+            key="1"
+            style={
+              Object {
+                "backgroundColor": "#1e1f22",
+                "fontSize": "1.3rem",
+                "margin": "0.8rem 0 0 0",
+              }
+            }
+          >
+            <Link
+              href="/"
+            >
+              <a>
+                Home
+              </a>
+            </Link>
+          </MenuItem>
+          <MenuItem
+            icon={
+              <ForwardRef(LoginOutlined)
+                style={
+                  Object {
+                    "fontSize": "1.3rem",
+                  }
+                }
+              />
+            }
+            key="2"
+            style={
+              Object {
+                "backgroundColor": "#1e1f22",
+                "fontSize": "1.3rem",
+                "margin": "0",
+              }
+            }
+          >
+            <Link
+              href="/login"
+            >
+              <a>
+                Login
+              </a>
+            </Link>
+          </MenuItem>
+          <MenuItem
+            icon={
+              <ForwardRef(LogoutOutlined)
+                style={
+                  Object {
+                    "fontSize": "1.3rem",
+                  }
+                }
+              />
+            }
+            key="3"
+            style={
+              Object {
+                "backgroundColor": "#1e1f22",
+                "fontSize": "1.3rem",
+                "margin": "0 0 0.7rem 0",
+              }
+            }
+          >
+            <Link
+              href="/logout"
+            >
+              <a>
+                Logout
+              </a>
+            </Link>
+          </MenuItem>
+        </SubMenu>
+      </Menu>
+    </styled.div>
+  </Header>
+</Fragment>
+`;

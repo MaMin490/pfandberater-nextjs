@@ -1,4 +1,5 @@
 import { Provider } from 'react-redux'
+import 'antd/dist/antd.css';
 
 import { useStore } from '../store'
 import '../css/main.css'

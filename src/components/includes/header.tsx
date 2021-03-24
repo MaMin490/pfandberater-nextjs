@@ -1,9 +1,9 @@
 import React, { useState} from 'react';
-import 'antd/dist/antd.css';
 import { Layout, Menu  } from 'antd';
 import { MenuFoldOutlined, HomeOutlined, LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import styled from 'styled-components';
+
 
 import { device } from '../../static/global/media-query';
 import { theme } from '../../static/global/colors';

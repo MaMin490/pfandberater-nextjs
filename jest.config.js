@@ -10,7 +10,8 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testPathIgnorePatterns: ['./.next/', './node_modules/', './.vscode/'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  globals: { 
+  transformIgnorePatterns: ['/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$'],
+  globals: {
     'ts-jest': {
       tsConfig: './tsconfig.jest.json',
     },
