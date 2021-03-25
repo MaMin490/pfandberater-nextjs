@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function _logout() {
-    return (
-        <div>
-            logout
-        </div>
-    )
+  return (
+    <div>
+      logout
+    </div>
+  );
 }

@@ -1,9 +1,8 @@
-import React, { useState} from 'react';
-import { Layout, Menu  } from 'antd';
+import React, { useState } from 'react';
+import { Layout, Menu } from 'antd';
 import { MenuFoldOutlined, HomeOutlined, LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import styled from 'styled-components';
-
 
 import { device } from '../../static/global/media-query';
 import { theme } from '../../static/global/colors';
@@ -37,12 +36,12 @@ const VisibleMobile = styled.div`
   }
 `;
 
-export default function Head():JSX.Element {
-  
+export default function Head(): JSX.Element {
   const [openKeys, setOpenKeys] = useState<string[]>(['sub1']);
 
-  function onOpenChange(keys: any): void {
-    const latestOpenKey = keys.find((key: any) => openKeys.indexOf(key) === -1);
+  function onOpenChange(keys: string[]): void {
+    console.log(keys)
+    const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
     if (rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
       setOpenKeys(keys);
     } else {
