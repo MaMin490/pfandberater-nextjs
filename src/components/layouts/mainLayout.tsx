@@ -13,24 +13,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.grey}
   }
 `
-
-export default function MainLayout(props:any) {
-    return (
-        <>
-            <GlobalStyle />
-            <ThemeProvider theme={theme}>
-                <Head>
-                    <title>Pfandberater</title>
-                    {/* <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-                    <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/> */}
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-                </Head>
-                <div>
-                    <Header />
-                    
-                    {props.children}
-                </div>
-            </ThemeProvider>
-        </>
-    )
+interface LayoutProps {
+   children: React.ReactNode;
 }
+
+export default function MainLayout(props: LayoutProps): JSX.Element {
+                 return (
+                   <>
+                     <GlobalStyle />
+                     <ThemeProvider theme={theme}>
+                       <Head>
+                         <title>Pfandberater</title>
+                         <link
+                           rel="stylesheet"
+                           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                         />
+                       </Head>
+                       <div>
+                         <Header />
+
+                         {props.children}
+                       </div>
+                     </ThemeProvider>
+                   </>
+                 );
+               }
