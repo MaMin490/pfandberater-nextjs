@@ -73,7 +73,7 @@ export default function Head(): JSX.Element {
               style={{ backgroundColor: colors.black, flexBasis: '12.5%' }}
               icon={<LoginOutlined style={{ fontSize }} />}>
               <Link href="/login">
-                <a style={{ fontSize }}>Login</a>
+                <a style={{ fontSize }}>login</a>
               </Link>
             </Menu.Item>
             <Menu.Item
@@ -81,7 +81,7 @@ export default function Head(): JSX.Element {
               style={{ backgroundColor: colors.black, flexBasis: '12.5%' }}
               icon={<LogoutOutlined style={{ fontSize }} />}>
               <Link href="/logout">
-                <a style={{ fontSize }}>Logout</a>
+                <a style={{ fontSize }}>logout</a>
               </Link>
             </Menu.Item>
           </Menu>
