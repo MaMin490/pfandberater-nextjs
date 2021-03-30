@@ -37,10 +37,10 @@ const VisibleMobile = styled.div`
 `;
 
 export default function Head(): JSX.Element {
+
   const [openKeys, setOpenKeys] = useState<string[]>(['sub1']);
 
   function onOpenChange(keys: string[]): void {
-    console.log(keys)
     const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
     if (rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
       setOpenKeys(keys);
@@ -63,25 +63,25 @@ export default function Head(): JSX.Element {
               justifyContent: 'flex-start',
               alignItems: 'center',
             }}>
-            <Menu.Item key="1" style={{ backgroundColor: colors.black, flexBasis: '75%' }}>
+            <Menu.Item key="1" style={{ backgroundColor: colors.black, flexBasis: '90%' }}>
               <Link href="/">
-                <a style={{ fontSize: '1.8rem', color: colors.mint, fontFamily: 'pacifico' }}>El Pfandberater</a>
+                <a style={{ fontSize: '1.8rem', color: colors.mint, fontFamily: 'pacifico' }}>Pfandberater.de</a>
               </Link>
             </Menu.Item>
             <Menu.Item
               key="2"
-              style={{ backgroundColor: colors.black, flexBasis: '12.5%' }}
+              style={{ backgroundColor: colors.black, flexBasis: '5%' }}
               icon={<LoginOutlined style={{ fontSize }} />}>
               <Link href="/login">
-                <a style={{ fontSize }}>login</a>
+                <a style={{ fontSize, color: colors.red }} >login</a>
               </Link>
             </Menu.Item>
             <Menu.Item
               key="3"
-              style={{ backgroundColor: colors.black, flexBasis: '12.5%' }}
+              style={{ backgroundColor: colors.black, flexBasis: '5%' }}
               icon={<LogoutOutlined style={{ fontSize }} />}>
               <Link href="/logout">
-                <a style={{ fontSize }}>logout</a>
+                <a style={{ fontSize, color: colors.red }}>logout</a>
               </Link>
             </Menu.Item>
           </Menu>
@@ -109,7 +109,7 @@ export default function Head(): JSX.Element {
                     fontSize: '1.5rem',
                     color: colors.mint,
                     marginTop: '0.8rem',
-                    marginRight: '1.5rem',
+                    marginRight: '1.1rem',
                   }}
                 />
               }>

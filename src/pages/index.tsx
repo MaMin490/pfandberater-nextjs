@@ -7,6 +7,14 @@ import { device } from '../static/global/media-query';
 
 const { colors } = theme;
 
+const DIV = styled.div`
+  margin: 0 3.5rem;
+
+  @media ${device.tablet} {
+    height: 35rem;
+  }
+`;
+
 const H3 = styled.h3`
   height: 20rem;
   color: white;
@@ -25,6 +33,35 @@ const H1 = styled.h1`
   margin: 0.9rem 0 0 0;
   font-size: 1.3rem;
 
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  @-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-1000px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   @media ${device.tablet} {
     font-size: 1.8rem;
   }
@@ -36,15 +73,139 @@ const H2 = styled.h2`
   margin: 0.15rem 0 0.65rem 0;
   font-size: 1.8rem;
 
+  animation: fadeIn ease 20s;
+  -webkit-animation: fadeIn ease 20s;
+  -moz-animation: fadeIn ease 20s;
+  -o-animation: fadeIn ease 20s;
+  -ms-animation: fadeIn ease 20s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media ${device.tablet} {
-      margin-top: 0.3rem;
+    margin-top: 0.3rem;
     font-size: 2.5rem;
+  }
+`;
+
+const BUTTON = styled.button`
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: ${colors.menuGrey};
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+
+  &:before {
+    content: '';
+    background: linear-gradient(45deg, #fedb37, #fdb931, #9f7928, #8a6e2f, #ffffff, #ffffac, #d1b464, #5d4a1f, #5d4a1f);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  &:active {
+    color: #000;
+  }
+
+  &:active:after {
+    background: transparent;
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  @media ${device.tablet} {
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+    maring-left: auto;
+    margin-right: auto;
   }
 `;
 
 export default function Home(): JSX.Element {
   return (
     <>
+    <DIV>    
       <H1>willkommen</H1>
       <H2>so funktionierts</H2>
       <Carousel autoplay>
@@ -58,6 +219,8 @@ export default function Home(): JSX.Element {
           <H3>3</H3>
         </div>
       </Carousel>
+      <BUTTON>SEI DABEI</BUTTON>
+    </DIV>
     </>
   );
 }
