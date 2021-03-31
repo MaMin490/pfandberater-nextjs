@@ -7,7 +7,7 @@ import { device } from '../static/global/media-query';
 
 const { colors } = theme;
 
-const DIV = styled.div`
+const CONTAINER = styled.div`
   margin: 0 1.5rem;
 
   @media ${device.tablet} {
@@ -135,6 +135,9 @@ const H2 = styled.h2`
 `;
 
 const BUTTON = styled.button`
+font-size: 1.3rem;
+  position: absolute;
+  margin-top: 0.5rem;
   width: 220px;
   height: 50px;
   border: none;
@@ -142,7 +145,11 @@ const BUTTON = styled.button`
   color: ${colors.menuGrey};
   background: ${colors.black};
   cursor: pointer;
-  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -5%);
+
   z-index: 0;
   border-radius: 10px;
 
@@ -199,33 +206,35 @@ const BUTTON = styled.button`
   }
 
   @media ${device.tablet} {
-    margin-top: 0.3rem;
-    font-size: 1.8rem;
-    maring-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;
+    font-size: 1.8rem;    
   }
 `;
 
+const DIV = styled.div`
+   position: relative;
+`;
 export default function Home(): JSX.Element {
   return (
     <>
-    <DIV>    
-      <H1>willkommen</H1>
-      <H2>so funktionierts</H2>
-      <Carousel autoplay>
-        <div>
-          <H3>1</H3>
-        </div>
-        <div>
-          <H3>2</H3>
-        </div>
-        <div>
-          <H3>3</H3>
-        </div>
-      </Carousel>
-    
-      <BUTTON>SEI DABEI</BUTTON>
-    </DIV>
+      <CONTAINER>
+        <H1>willkommen</H1>
+        <H2>so funktionierts</H2>
+        <Carousel autoplay>
+          <div>
+            <H3>1</H3>
+          </div>
+          <div>
+            <H3>2</H3>
+          </div>
+          <div>
+            <H3>3</H3>
+          </div>
+        </Carousel>
+        <DIV>
+          <BUTTON>SEI DABEI</BUTTON>
+        </DIV>
+      </CONTAINER>
     </>
   );
 }
