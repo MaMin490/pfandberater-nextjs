@@ -36,7 +36,7 @@ exports[`Header should render correctly 1`] = `
           style={
             Object {
               "backgroundColor": "black",
-              "flexBasis": "75%",
+              "flexBasis": "90%",
             }
           }
         >
@@ -52,7 +52,7 @@ exports[`Header should render correctly 1`] = `
                 }
               }
             >
-              El Pfandberater
+              Pfandberater.de
             </a>
           </Link>
         </MenuItem>
@@ -70,7 +70,7 @@ exports[`Header should render correctly 1`] = `
           style={
             Object {
               "backgroundColor": "black",
-              "flexBasis": "12.5%",
+              "flexBasis": "5%",
             }
           }
         >
@@ -80,6 +80,7 @@ exports[`Header should render correctly 1`] = `
             <a
               style={
                 Object {
+                  "color": "#e54344",
                   "fontSize": "1.2rem",
                 }
               }
@@ -102,7 +103,7 @@ exports[`Header should render correctly 1`] = `
           style={
             Object {
               "backgroundColor": "black",
-              "flexBasis": "12.5%",
+              "flexBasis": "5%",
             }
           }
         >
@@ -112,6 +113,7 @@ exports[`Header should render correctly 1`] = `
             <a
               style={
                 Object {
+                  "color": "#e54344",
                   "fontSize": "1.2rem",
                 }
               }
@@ -147,7 +149,7 @@ exports[`Header should render correctly 1`] = `
                 Object {
                   "color": "#2bebc8",
                   "fontSize": "1.5rem",
-                  "marginRight": "1.5rem",
+                  "marginRight": "1.1rem",
                   "marginTop": "0.8rem",
                 }
               }

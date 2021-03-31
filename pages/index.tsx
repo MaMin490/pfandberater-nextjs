@@ -8,10 +8,14 @@ import { device } from '../static/global/media-query';
 const { colors } = theme;
 
 const DIV = styled.div`
-  margin: 0 3.5rem;
+  margin: 0 1.5rem;
 
   @media ${device.tablet} {
-    height: 35rem;
+    margin: 0 5rem;
+  }
+
+  @media ${device.laptop} {
+    margin: 0 13rem;
   }
 `;
 
@@ -136,7 +140,7 @@ const BUTTON = styled.button`
   border: none;
   outline: none;
   color: ${colors.menuGrey};
-  background: #111;
+  background: ${colors.black};
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -219,6 +223,7 @@ export default function Home(): JSX.Element {
           <H3>3</H3>
         </div>
       </Carousel>
+    
       <BUTTON>SEI DABEI</BUTTON>
     </DIV>
     </>

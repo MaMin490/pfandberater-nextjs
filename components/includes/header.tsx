@@ -73,7 +73,7 @@ export default function Head(): JSX.Element {
               style={{ backgroundColor: colors.black, flexBasis: '5%' }}
               icon={<LoginOutlined style={{ fontSize }} />}>
               <Link href="/login">
-                <a style={{ fontSize, color: colors.red }} >login</a>
+                <a style={{ fontSize, color: colors.red }}>login</a>
               </Link>
             </Menu.Item>
             <Menu.Item
@@ -118,7 +118,7 @@ export default function Head(): JSX.Element {
                 style={{ backgroundColor: colors.lightGrey, margin: '0.8rem 0 0 0', fontSize: '1.3rem' }}
                 icon={<HomeOutlined style={{ fontSize: '1.3rem' }} />}>
                 <Link href="/">
-                  <a>Home</a>
+                  <a style={{ color: colors.red }}>Home</a>
                 </Link>
               </Menu.Item>
               <Menu.Item
@@ -126,7 +126,7 @@ export default function Head(): JSX.Element {
                 style={{ backgroundColor: colors.lightGrey, margin: '0', fontSize: '1.3rem' }}
                 icon={<LoginOutlined style={{ fontSize: '1.3rem' }} />}>
                 <Link href="/login">
-                  <a>Login</a>
+                  <a style={{ color: colors.red }}>Login</a>
                 </Link>
               </Menu.Item>
               <Menu.Item
@@ -134,7 +134,7 @@ export default function Head(): JSX.Element {
                 style={{ backgroundColor: colors.lightGrey, margin: '0 0 0.7rem 0', fontSize: '1.3rem' }}
                 icon={<LogoutOutlined style={{ fontSize: '1.3rem' }} />}>
                 <Link href="/logout">
-                  <a>Logout</a>
+                  <a style={{ color: colors.red }}>Logout</a>
                 </Link>
               </Menu.Item>
             </SubMenu>

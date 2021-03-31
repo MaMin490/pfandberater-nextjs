@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+<Fragment>
+  <styled.div>
+    <styled.h1>
+      willkommen
+    </styled.h1>
+    <styled.h2>
+      so funktionierts
+    </styled.h2>
+    <ForwardRef
+      autoplay={true}
+    >
+      <div>
+        <styled.h3>
+          1
+        </styled.h3>
+      </div>
+      <div>
+        <styled.h3>
+          2
+        </styled.h3>
+      </div>
+      <div>
+        <styled.h3>
+          3
+        </styled.h3>
+      </div>
+    </ForwardRef>
+    <styled.button>
+      SEI DABEI
+    </styled.button>
+  </styled.div>
+</Fragment>
+`;
