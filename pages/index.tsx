@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { theme } from '../public/global/colors';
 import { device } from '../public/global/media-query';
 import Explanation from '../components/landing-page/explanation';
+import ButtonPrimary from '../components/common/button';
 
 const { colors } = theme;
 
@@ -65,11 +66,11 @@ const H2 = styled.h2`
   margin: 0.15rem 0 0.65rem 0;
   font-size: 1.8rem;
 
-  animation: fadeIn ease 20s;
-  -webkit-animation: fadeIn ease 20s;
-  -moz-animation: fadeIn ease 20s;
-  -o-animation: fadeIn ease 20s;
-  -ms-animation: fadeIn ease 20s;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
 
   @keyframes fadeIn {
     0% {
@@ -122,83 +123,6 @@ const H2 = styled.h2`
   }
 `;
 
-const BUTTON = styled.button`
-  font-size: 1.3rem;
-  position: absolute;
-  margin-top: 0.5rem;
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: ${colors.menuGrey};
-  background: ${colors.black};
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -5%);
-
-  z-index: 0;
-  border-radius: 10px;
-
-  &:before {
-    content: '';
-    background: linear-gradient(45deg, #fedb37, #fdb931, #9f7928, #8a6e2f, #ffffff, #ffffac, #d1b464, #5d4a1f, #5d4a1f);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-  }
-
-  &:active {
-    color: #000;
-  }
-
-  &:active:after {
-    background: transparent;
-  }
-  &:hover:before {
-    opacity: 1;
-  }
-
-  &:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-
-  @media ${device.tablet} {
-    margin-top: 2rem;
-    font-size: 1.8rem;
-  }
-`;
-
 const DIV = styled.div`
   position: relative;
 `;
@@ -211,7 +135,7 @@ export default function Home(): JSX.Element {
         <H2>so funktionierts</H2>
         <Explanation />
         <DIV>
-          <BUTTON>sei dabei</BUTTON>
+          <ButtonPrimary />
         </DIV>
       </CONTAINER>
     </>
