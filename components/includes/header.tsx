@@ -4,8 +4,8 @@ import { MenuFoldOutlined, HomeOutlined, LoginOutlined, LogoutOutlined } from '@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import { device } from '../../static/global/media-query';
-import { theme } from '../../static/global/colors';
+import { device } from '../../public/global/media-query';
+import { theme } from '../../public/global/colors';
 
 const { Header } = Layout;
 
@@ -37,11 +37,10 @@ const VisibleMobile = styled.div`
 `;
 
 export default function Head(): JSX.Element {
-
   const [openKeys, setOpenKeys] = useState<string[]>(['sub1']);
 
   function onOpenChange(keys: string[]): void {
-    const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
+    const latestOpenKey = keys.find(key => openKeys.indexOf(key) === -1);
     if (rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
       setOpenKeys(keys);
     } else {

@@ -28,9 +28,11 @@ exports[`Home should render correctly 1`] = `
         </styled.h3>
       </div>
     </ForwardRef>
-    <styled.button>
-      SEI DABEI
-    </styled.button>
+    <styled.div>
+      <styled.button>
+        sei dabei
+      </styled.button>
+    </styled.div>
   </styled.div>
 </Fragment>
 `;

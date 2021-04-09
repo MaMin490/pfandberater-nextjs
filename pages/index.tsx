@@ -1,9 +1,9 @@
 import React from 'react';
-import { Carousel } from 'antd';
 import styled from 'styled-components';
 
-import { theme } from '../static/global/colors';
-import { device } from '../static/global/media-query';
+import { theme } from '../public/global/colors';
+import { device } from '../public/global/media-query';
+import Explanation from '../components/landing-page/explanation';
 
 const { colors } = theme;
 
@@ -16,18 +16,6 @@ const CONTAINER = styled.div`
 
   @media ${device.laptop} {
     margin: 0 13rem;
-  }
-`;
-
-const H3 = styled.h3`
-  height: 20rem;
-  color: white;
-  line-height: 15rem;
-  text-align: center;
-  background: ${colors.lightGrey};
-
-  @media ${device.tablet} {
-    height: 35rem;
   }
 `;
 
@@ -135,7 +123,7 @@ const H2 = styled.h2`
 `;
 
 const BUTTON = styled.button`
-font-size: 1.3rem;
+  font-size: 1.3rem;
   position: absolute;
   margin-top: 0.5rem;
   width: 220px;
@@ -207,32 +195,23 @@ font-size: 1.3rem;
 
   @media ${device.tablet} {
     margin-top: 2rem;
-    font-size: 1.8rem;    
+    font-size: 1.8rem;
   }
 `;
 
 const DIV = styled.div`
-   position: relative;
+  position: relative;
 `;
+
 export default function Home(): JSX.Element {
   return (
     <>
       <CONTAINER>
         <H1>willkommen</H1>
         <H2>so funktionierts</H2>
-        <Carousel autoplay>
-          <div>
-            <H3>1</H3>
-          </div>
-          <div>
-            <H3>2</H3>
-          </div>
-          <div>
-            <H3>3</H3>
-          </div>
-        </Carousel>
+        <Explanation />
         <DIV>
-          <BUTTON>SEI DABEI</BUTTON>
+          <BUTTON>sei dabei</BUTTON>
         </DIV>
       </CONTAINER>
     </>

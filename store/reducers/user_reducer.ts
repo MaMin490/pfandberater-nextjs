@@ -1,8 +1,8 @@
 interface ActionType {
-  type:string
+  type: string;
 }
 
-export default function(state = {}, action:ActionType): Record<string, unknown> {
+export default function userReducer(state = {}, action: ActionType): Record<string, unknown> {
   switch (action.type) {
     default:
       return state;

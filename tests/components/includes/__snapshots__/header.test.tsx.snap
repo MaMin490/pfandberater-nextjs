@@ -190,7 +190,13 @@ exports[`Header should render correctly 1`] = `
             <Link
               href="/"
             >
-              <a>
+              <a
+                style={
+                  Object {
+                    "color": "#e54344",
+                  }
+                }
+              >
                 Home
               </a>
             </Link>
@@ -217,7 +223,13 @@ exports[`Header should render correctly 1`] = `
             <Link
               href="/login"
             >
-              <a>
+              <a
+                style={
+                  Object {
+                    "color": "#e54344",
+                  }
+                }
+              >
                 Login
               </a>
             </Link>
@@ -244,7 +256,13 @@ exports[`Header should render correctly 1`] = `
             <Link
               href="/logout"
             >
-              <a>
+              <a
+                style={
+                  Object {
+                    "color": "#e54344",
+                  }
+                }
+              >
                 Logout
               </a>
             </Link>
