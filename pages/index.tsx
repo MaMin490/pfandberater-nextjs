@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 import { theme } from '../public/global/colors';
 import { device } from '../public/global/media-query';
-import Explanation from '../components/home/how-to';
+import Explanation from '../components/home/HowTo';
 import ButtonPrimary from '../components/common/button';
+import Maps from '../components/home/Maps';
 
 const { colors } = theme;
 
@@ -136,6 +137,9 @@ export default function Home(): JSX.Element {
         <Explanation />
         <DIV>
           <ButtonPrimary />
+        </DIV>
+        <DIV>
+          <Maps />
         </DIV>
       </CONTAINER>
     </>
