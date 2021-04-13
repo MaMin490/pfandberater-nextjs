@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Footer from '../../../components/includes/footer';
+import Impressum from '../../pages/impressum';
 
-describe('Footer', () => {
+describe('Impressum', () => {
   it('should render correctly', () => {
-    const component = shallow(<Footer />);
+    const component = shallow(<Impressum />);
 
     expect(component).toMatchSnapshot();
   });

@@ -13,7 +13,7 @@ module.exports = {
   transformIgnorePatterns: ['/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$'],
   globals: {
     'ts-jest': {
-      tsConfig: './tsconfig.jest.json',
+      tsconfig: './tsconfig.jest.json',
     },
   },
 };

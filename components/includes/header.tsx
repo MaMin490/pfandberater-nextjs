@@ -16,6 +16,7 @@ const fontSize = '1.2rem';
 
 const VisibleLaptop = styled.div`
   visibility: hidden;
+  background-color: ${colors.black};
 
   @media ${device.tablet} {
     visibility: visible;
@@ -30,6 +31,7 @@ const VisibleMobile = styled.div`
   right: 0;
   z-index: 1000;
   visibility: visible;
+  background-color: ${colors.lightGrey};
 
   @media ${device.tablet} {
     visibility: hidden;
@@ -51,7 +53,7 @@ export default function Head(): JSX.Element {
   return (
     <>
       <Header style={{ width: '100%', backgroundColor: colors.black, paddingBottom: '4.6rem' }}>
-        <VisibleLaptop style={{ backgroundColor: colors.black }}>
+        <VisibleLaptop>
           <Menu
             theme="dark"
             mode="horizontal"
@@ -85,7 +87,7 @@ export default function Head(): JSX.Element {
             </Menu.Item>
           </Menu>
         </VisibleLaptop>
-        <VisibleMobile style={{ backgroundColor: colors.lightGrey }}>
+        <VisibleMobile>
           <Menu
             mode="inline"
             theme="dark"
@@ -100,7 +102,7 @@ export default function Head(): JSX.Element {
                 fontFamily: 'pacifico',
                 marginTop: '0.95rem',
               }}
-              title="El Pfandberater"
+              title="Pfandberater.de"
               key="sub1"
               icon={
                 <MenuFoldOutlined
