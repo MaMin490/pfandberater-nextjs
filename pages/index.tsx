@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { theme } from '../public/global/colors';
 import { device } from '../public/global/media-query';
-import Explanation from '../components/landing-page/explanation';
+import Explanation from '../components/home/how-to';
 import ButtonPrimary from '../components/common/button';
 
 const { colors } = theme;
