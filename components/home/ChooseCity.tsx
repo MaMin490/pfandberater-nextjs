@@ -32,7 +32,7 @@ const MENU_ITEM = styled(Menu.Item)`
 
 const Button = styled.button`
   color: ${colors.red};
-  background: ${colors.grey};
+  background: ${colors.lightGrey};
   border: none;
   margin-left: 0.9rem;
 `;

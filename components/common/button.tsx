@@ -20,7 +20,7 @@ const BUTTON = styled.button`
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -5%);
+  transform: translate(-50%, 1rem);
 
   z-index: 0;
   border-radius: 10px;

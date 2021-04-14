@@ -5,11 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DotGothic16&family=Monoton&family=Reenie+Beanie&family=Ubuntu+Mono:wght@400;700&display=swap');
 
-body,
-a {
-  font-family: 'JetBrains Mono', monospace;
-  margin: 0;
+body{
+  font-family: 'JetBrains Mono', monospace;  
   font-size: '16px';
+ 
 }
 
 /* span { */

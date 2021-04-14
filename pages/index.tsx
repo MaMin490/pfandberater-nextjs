@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 import { theme } from '../public/global/colors';
 import { device } from '../public/global/media-query';
-import Explanation from '../components/home/HowTo';
+import HowTo from '../components/home/HowTo';
 import ButtonPrimary from '../components/common/button';
 import Maps from '../components/home/Maps';
+import Divider from '../components/common/Divider';
 
 const { colors } = theme;
 
@@ -134,10 +135,15 @@ export default function Home(): JSX.Element {
       <CONTAINER>
         <H1>willkommen</H1>
         <H2>so funktionierts</H2>
-        <Explanation />
+        <HowTo />
         <DIV>
           <ButtonPrimary />
         </DIV>
+      </CONTAINER>
+      <DIV>
+        <Divider />
+      </DIV>
+      <CONTAINER>
         <DIV>
           <Maps />
         </DIV>

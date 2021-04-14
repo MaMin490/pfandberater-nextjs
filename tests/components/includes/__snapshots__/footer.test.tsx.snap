@@ -2,27 +2,10 @@
 
 exports[`Header should render correctly 1`] = `
 <Fragment>
-  <Header
-    style={
-      Object {
-        "backgroundColor": "black",
-        "paddingBottom": "4.6rem",
-        "width": "100%",
-      }
-    }
-  >
+  <Styled(Header)>
     <styled.div>
-      <Menu
+      <Styled(Menu)
         mode="horizontal"
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "black",
-            "display": "flex",
-            "justifyContent": "flex-start",
-            "width": "100%",
-          }
-        }
         theme="dark"
       >
         <MenuItem
@@ -116,18 +99,12 @@ exports[`Header should render correctly 1`] = `
             </a>
           </Link>
         </MenuItem>
-      </Menu>
+      </Styled(Menu)>
     </styled.div>
     <styled.div>
-      <Menu
+      <Styled(Menu)
         mode="inline"
         onOpenChange={[Function]}
-        style={
-          Object {
-            "backgroundColor": "black",
-            "width": "100%",
-          }
-        }
         theme="dark"
       >
         <SubMenu
@@ -256,8 +233,8 @@ exports[`Header should render correctly 1`] = `
             </Link>
           </MenuItem>
         </SubMenu>
-      </Menu>
+      </Styled(Menu)>
     </styled.div>
-  </Header>
+  </Styled(Header)>
 </Fragment>
 `;

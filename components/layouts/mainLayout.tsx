@@ -10,8 +10,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ${theme.colors.grey}
-
+    background-color: ${theme.colors.lightGrey};
   }
 `;
 interface LayoutProps {

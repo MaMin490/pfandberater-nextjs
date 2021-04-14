@@ -48,8 +48,8 @@ const MENU_LAPTOP = styled(Menu)`
   width: 100%;
   background-color: ${colors.black};
   display: flex;
-  justifycontent: flex-start;
-  alignitems: center;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 const MENU_MOBILE = styled(Menu)`
