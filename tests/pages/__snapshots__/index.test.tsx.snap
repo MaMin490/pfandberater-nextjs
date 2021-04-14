@@ -9,9 +9,12 @@ exports[`Home should render correctly 1`] = `
     <styled.h2>
       so funktionierts
     </styled.h2>
-    <Explanation />
+    <HowTo />
     <styled.div>
       <ButtonPrimary />
+    </styled.div>
+    <styled.div>
+      <Maps />
     </styled.div>
   </styled.div>
 </Fragment>

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowTo should render correctly 1`] = `
+<ForwardRef
+  autoplay={true}
+>
+  <div>
+    <styled.h3>
+      1
+    </styled.h3>
+  </div>
+  <div>
+    <styled.h3>
+      2
+    </styled.h3>
+  </div>
+  <div>
+    <styled.h3>
+      3
+    </styled.h3>
+  </div>
+</ForwardRef>
+`;

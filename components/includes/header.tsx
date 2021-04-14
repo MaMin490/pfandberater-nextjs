@@ -38,6 +38,25 @@ const VisibleMobile = styled.div`
   }
 `;
 
+const HEADER = styled(Header)`
+  width: 100%;
+  background-color: ${colors.black};
+  padding-bottom: 4.6rem;
+`;
+
+const MENU_LAPTOP = styled(Menu)`
+  width: 100%;
+  background-color: ${colors.black};
+  display: flex;
+  justifycontent: flex-start;
+  alignitems: center;
+`;
+
+const MENU_MOBILE = styled(Menu)`
+  width: 100%;
+  background-color: ${colors.black};
+`;
+
 export default function Head(): JSX.Element {
   const [openKeys, setOpenKeys] = useState<string[]>(['sub1']);
 
@@ -52,18 +71,9 @@ export default function Head(): JSX.Element {
 
   return (
     <>
-      <Header style={{ width: '100%', backgroundColor: colors.black, paddingBottom: '4.6rem' }}>
+      <HEADER>
         <VisibleLaptop>
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            style={{
-              width: '100%',
-              backgroundColor: colors.black,
-              display: 'flex',
-              justifyContent: 'flex-start',
-              alignItems: 'center',
-            }}>
+          <MENU_LAPTOP theme="dark" mode="horizontal">
             <Menu.Item key="1" style={{ backgroundColor: colors.black, flexBasis: '90%' }}>
               <Link href="/">
                 <a style={{ fontSize: '1.8rem', color: colors.mint, fontFamily: 'pacifico' }}>Pfandberater.de</a>
@@ -85,14 +95,10 @@ export default function Head(): JSX.Element {
                 <a style={{ fontSize, color: colors.red }}>logout</a>
               </Link>
             </Menu.Item>
-          </Menu>
+          </MENU_LAPTOP>
         </VisibleLaptop>
         <VisibleMobile>
-          <Menu
-            mode="inline"
-            theme="dark"
-            onOpenChange={onOpenChange}
-            style={{ width: '100%', backgroundColor: colors.black }}>
+          <MENU_MOBILE mode="inline" theme="dark" onOpenChange={onOpenChange}>
             <SubMenu
               style={{
                 color: colors.mint,
@@ -139,9 +145,9 @@ export default function Head(): JSX.Element {
                 </Link>
               </Menu.Item>
             </SubMenu>
-          </Menu>
+          </MENU_MOBILE>
         </VisibleMobile>
-      </Header>
+      </HEADER>
     </>
   );
 }
