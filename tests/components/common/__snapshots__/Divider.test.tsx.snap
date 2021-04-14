@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider should render correctly 1`] = `
+<styled.div>
+  <Divider
+    orientation="right"
+    style={
+      Object {
+        "borderTop": "rgba(255, 255, 255, 0.65)",
+        "color": "#2bebc8",
+        "left": "50%",
+        "position": "absolute",
+        "top": "50%",
+        "transform": "translate(-50%, 5.5rem)",
+      }
+    }
+  >
+    location
+  </Divider>
+</styled.div>
+`;

@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Button from '../../../components/common/Button';
+import Divider from '../../../components/common/Divider';
 
-describe('Button', () => {
+describe('Divider', () => {
   it('should render correctly', () => {
-    const component = shallow(<Button />);
+    const component = shallow(<Divider />);
 
     expect(component).toMatchSnapshot();
   });

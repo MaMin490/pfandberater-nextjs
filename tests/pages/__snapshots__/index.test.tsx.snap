@@ -13,6 +13,11 @@ exports[`Home should render correctly 1`] = `
     <styled.div>
       <ButtonPrimary />
     </styled.div>
+  </styled.div>
+  <styled.div>
+    <Divider />
+  </styled.div>
+  <styled.div>
     <styled.div>
       <Maps />
     </styled.div>
