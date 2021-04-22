@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { theme } from '../public/global/colors';
 import { device } from '../public/global/media-query';
 import HowTo from '../components/home/HowTo';
-import ButtonPrimary from '../components/common/Button';
+import ButtonPrimary from '../components/common/button';
 import Maps from '../components/home/Maps';
 import Divider from '../components/common/Divider';
 
